@@ -79,15 +79,35 @@ body {
 .chart {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    align-items: flex-end;
 }
 
-.graphics {
+.amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: var(--dark-brown);
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    color: var(--very-pale-orange);
+    visibility: hidden;
+}
+
+.bar {
     width: 3rem;
     height: 5rem;
     background-color: var(--soft-red);
-    border-radius: .5rem;
+    border-radius: .3rem;
     margin-bottom: .5rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    opacity: .75;
 }
 
 .handle-days {
@@ -133,6 +153,5 @@ body {
     color: var(--medium-brown);
     font-size: 1.2rem;
 }
-
 
 
